@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Bug - PALORANT</title> 
+    <link rel="stylesheet" href="/CSS-Files/reportBug.css">
+    <link rel="stylesheet" href="/CSS-Files/navbar-footer.css"> 
+    <link rel="icon" href="/Images/PalorantLogoBlack.png" type="image/png">
+    <script src="/JS-Files/reportBug.js" defer></script>
+    <script src="/JS-Files/navbar-footer.js"></script>
+    <style>
+        @font-face {
+            font-family: 'IBMPlexSans'; 
+            src: url(/Font/IBMPlexSans-Medium.otf) format('truetype'); 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbarHeader">
+        <div class="containerNavbar">
+            <nav class="icon">
+                <img src="/Images/PalorantGiot.png" alt="Giot Games" class="GiotGames" > 
+                <img src="/Images/PalorantLogo.png" alt="Palorant Logo" class="PalorantLogo"> 
+            </nav>
+            <nav class="navbar"> 
+                <button><a href="/index.html">HOME</a></button>
+                <button><a href="agent.html">AGENT</a></button>
+                <button><a href="maps.html">MAPS</a></button>
+                <button><a href="news.html">NEWS</a></button>
+                <button><a href="reportBug.html">REPORT BUG</a></button>
+            </nav> 
+            <nav class="navbarHamburger" id="navbarHamburger">
+                <div class="closeLogo" id="closeLogo">✖</div> 
+                <div class="palorantHamburger">PALORANT</div> 
+                <div class="separatorHamburger">MAIN MENU</div>
+                <button onclick="window.location.href='/index.html'">HOME   𖠿</button>           
+                <button onclick="window.location.href='agent.html'">AGENT   𖦏</button>
+                <button onclick="window.location.href='maps.html'">MAPS   ✈︎</button>
+                <button onclick="window.location.href='news.html'">NEWS   ✉︎</button>
+                <button onclick="window.location.href='reportBug.html'">REPORT BUG   ✔</button>
+            </nav>
+
+            <nav class="toggleLogo">
+                <div class="menu-toggle" id="menu-toggle">
+                    ☰
+                </div>
+            </nav>
+        </div>
+
+    </div>
+
+    <div class="pageHeader"></div>
+    <div class="containerReportBugPage"> 
+
+        <div class="containerReportForm">
+            <div class="containerTextReport">
+                <img src="/Images/ReportBugText.png" alt="">
+            </div>
+            <div class="reportBugHeader">PROVIDE A BUG REPORT HERE</div> 
+            <div class="letUsKnow">🔍︎ Let us know further!</div>
+
+            <div class="container">
+                <form id="form">
+                    <div class="inputControl">
+                        <label for="username">Username</label>
+                        <input id="username" name="username" type="text" placeholder="e.g. Unknown Agent">
+                        <div class="error"></div>
+                    </div>
+                    <div class="inputControl">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="text" placeholder="e.g. palorantagent@gmail.com">
+                        <div class="error"></div>
+                    </div>
+                    <div class="inputControl">
+                        <label for="server">Server</label>
+                        <input id="server"name="server" type="text" placeholder="e.g. 3564, 2389, 9487">
+                        <div class="error"></div>
+                    </div>
+                    <div class="inputControl descInput">
+                        <label for="description">Description</label>
+                        <textarea id="desc"name="desc" placeholder="e.g. Maps unloading, Weapon damage flaw, Abnormal SFX"></textarea>
+                        <div class="error"></div>
+                    </div>
+                    <div class="checkboxInput">
+                        <input type="checkbox" name="checkbox" id="checkbox"> 
+                        <label for="checkbox">I agree to receive follow-up e-mails regarding further Palorant information </label>
+                    </div>
+
+                    <button type="submit" id="reportBtn">REPORT NOW</button>
+                </form>
+            </div>
+        </div>
+    </div> 
+
+    <footer class="containerFooter">
+        <div class="website">OUR SOCIAL MEDIA:</div>
+        <div class="footerContent">
+            <button><img src="/Images/PalorantYouTube.png" alt="YouTube Icon" ></button>
+            <button><img src="/Images/PalorantInstagram.png" alt="Instagram Icon"></button> 
+            <button><img src="/Images/PalorantX.png" alt="X Icon"></button> 
+        </div>
+        <div class="adress">Registered Adress: GiotGames HQ, 3 Lower Thames Street, London ECR3 6HE, UK</div>
+        <img src="/Images/PalorantGiot.png" alt="" class="giotGamesFooter">
+        <div class="footerCopyright">©2025 Giot Games, Inc. GIOT GAMES, PALORANT and any associated logos are trademarks, service marks, and/or registered trademarks of Giot Games, Inc.</div>
+        <div class="footerLowerContent">
+            <button>PRIVACY POLICY</button>
+            <button>TERMS AND CONDITIONS</button>
+            <button>ABOUT GIOT GAMES</button>
+        </div>
+    </footer>
+</body>
+</html>

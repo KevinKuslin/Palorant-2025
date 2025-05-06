@@ -1,0 +1,578 @@
+body{
+    margin: 0; 
+    padding: 0; 
+}
+
+@font-face {
+    font-family: 'Valorant'; 
+    src: url(/Font/ValorantFont.ttf) format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Gontserrat';
+    src: url(/Font/Gontserrat-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'IBMPlexSans'; 
+    src: url(/Font/IBMPlexSans-Medium.otf) format('truetype'); 
+}
+
+.pageHeader{
+    width: 100%; 
+    height: 65px; 
+    background-color: black;
+}
+
+
+.containerReportBugPage{
+    margin: 0 auto; 
+    top: 0; 
+    width: auto;  
+    height: 842.5px; 
+    display: flex; 
+    flex-direction: column; 
+    overflow: hidden; 
+    background-image: url(/Images/PalorantReportBug.jpg);  
+    background-position: top; 
+    align-items: center; 
+}
+
+.containerReportForm{
+    margin-top: 15px;
+    width: 520px; 
+    height: 710px; 
+    background-color: #212121;  
+    border-radius: 32px; 
+    opacity: 0.85; 
+    justify-content:baseline; 
+    display: flex; 
+    flex-direction: column; 
+    padding: 20px 50px 30px 50px; 
+    gap: 20px;
+}
+
+.reportBugPalorantLogo{
+    width: 105px; 
+    height: auto; 
+    opacity: 1; 
+    margin-left: 210px; 
+    background-color: black; 
+    padding: 8px 0px 8px 0px; 
+    border-radius: 15px; 
+}
+
+.containerTextReport img{
+    object-fit: contain; 
+    width: 80%; 
+    height: auto; 
+}
+
+.containerTextReport{
+    display: flex;
+    width: 420px; 
+    height: 70px; 
+    background-color: black; 
+    margin-top: -5px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 15px;
+    margin-left: 9.5%;
+}
+
+.darkenWholePage{
+    position: absolute; 
+    margin: 0; 
+    top: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: 1900px; 
+    background-color: black; 
+    visibility: hidden; 
+    opacity: 0;  
+    pointer-events: none; 
+    z-index: 15;
+    display: none;
+}
+
+.reportBugHeader{
+    font-family: 'IBMPlexSans', 'sans-serif'; 
+    color: white; 
+    font-size: 29px; 
+    margin-left: 0px;
+    margin-top: -15px; 
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+
+.letUsKnow{
+    font-family: 'IBMPlexSans', 'sans-serif'; 
+    color: white; 
+    opacity: 0.5; 
+    text-align: center; 
+    white-space: none; 
+    margin-top: -22px;
+    font-size: 20px;
+}
+
+.container{
+    width: 100%; 
+    height: 100%; 
+    background-color: transparent; 
+    margin-top: -15px;
+}
+
+.inputControl {
+    display: flex;
+    flex-direction: column; 
+    gap: 5.5px; 
+}
+
+.inputControl input, .inputControl textarea {
+    color: #FFFFFF; 
+    background-color: black; 
+    border-radius: 5px; 
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+    height: 28px;
+    font-size: 18px; 
+    font-weight: lighter; 
+    letter-spacing: 1px; 
+    opacity: 0.9;
+    padding-left: 10px;
+    letter-spacing: 1px;
+    font-family: 'IBMPlexSans', 'sans-serif'; 
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    align-items: stretch; 
+    border: 3px solid #808080;
+}
+
+.inputControl label{
+    font-family: 'IBMPlexSans', 'sans-serif'; 
+    color: white; 
+    letter-spacing: 1px; 
+    opacity: 0.9; 
+    font-size: 16.5px; 
+}
+
+.inputControl input:focus {
+    outline: 0;
+}
+
+.inputControl .error {
+    color: #ff3860;
+    font-size: 12px; 
+    height: 13px;
+}
+
+.checkboxInput{
+    margin-top: 11px; 
+    display: flex; 
+    flex-direction: row; 
+    color: white;
+    font-size: 13px; 
+    font-family: 'IBMPlexSans', 'sans-serif'; 
+    margin-left: -10px;
+}
+
+.checkboxInput input[type="checkbox"]{
+    display: none; 
+}
+
+.checkboxInput input[type="checkbox"] + label{
+    position: relative; 
+    padding-left: 50px; 
+    padding-right: 20px;
+    cursor: pointer; 
+    font-size: 17px; 
+    color: #E2E2E2; 
+    display: inline-block; 
+    line-height: 1.5; 
+}
+
+.checkboxInput input[type="checkbox"] + label::before{
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    width: 30px; 
+    height: 30px; 
+    border: 3px solid #808080; 
+    border-radius: 5px; 
+    background-color: black; 
+    margin-top: 5.5px;
+}
+
+.checkboxInput input[type="checkbox"]:checked + label::before{
+    background-color: black; 
+    border-color: #808080; 
+    content: '✔'; 
+    color: white; 
+    text-align: center; 
+    line-height: 18px; 
+    font-size: 50px; 
+}
+
+.checkboxInput input[type="checkbox"]:checked + label{
+    color: white;
+}
+
+textarea{
+    resize: none; 
+    overflow: hidden;
+}
+
+#form {
+    width: 100%; 
+    height: 100%; 
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 4px;
+    font-size: 12px; 
+    display: flex; 
+    flex-direction: column;
+    margin-top: -20px;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 18px;
+    width: 100%;
+    color: #3C3C3C;
+    border: none;
+    background-color: #FFFFFF; 
+    /* 808080 */ 
+    height: 48px; 
+    border-radius: 10px; 
+    font-family: 'IBMPlexSans', 'sans-serif'; 
+    font-size: 20px; 
+    letter-spacing: 1px; 
+    font-weight: bold; 
+    margin-left: -4%;
+}
+
+.inputControl {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 8px;
+}
+
+.inputControl input, .inputControl textarea {
+    border: 3px solid #808080;
+	border-radius: 10px;
+	display: block;
+	font-size: 16.5px;
+	padding: 10px;
+	width: 90%; 
+    height: 20px; 
+    margin-left: -10px; 
+    margin-top: 3px;
+}
+
+.inputControl textarea{
+    height: 65px;
+}
+
+.inputControl input:focus, .inputControl textarea:focus {
+    outline: 0;
+}
+
+.inputControl.success input, .inputControl.success textarea {
+    border-color: white;
+}
+
+.inputControl.error input, .inputControl.error textarea {
+    border-color: #ff3860;
+}
+
+.inputControl .error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 13px; 
+    font-family: 'IBMPlexSans', 'sans-serif'; 
+}
+
+.containerUpperNews{
+    width: 100%; 
+    height: 1011px; 
+    background-color: whitesmoke; 
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 40px; 
+    flex-direction: row; 
+    overflow: hidden;
+}
+
+.block{
+    background-color: red; 
+    width: 350px; 
+    height: 200px; 
+    margin-top: 50px; 
+    animation: appear 0.4s linear; 
+    border-radius: 10px;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0.55; 
+        transform: scale(0.82);
+    }
+    to{
+        opacity: 1; 
+        transform: scale(1);
+    }
+}
+
+.containerSuccessForm{
+    margin-top: 15px;
+    width: 520px; 
+    height: 710px; 
+    background-color: #212121;  
+    border-radius: 32px; 
+    opacity: 0.85; 
+    align-items: center; 
+    display: flex; 
+    flex-direction: column; 
+    padding: 85px 50px 30px 50px; 
+    gap: 20px;
+}
+
+.reportPalorantTitle{
+    width: 405px; 
+    height: auto; 
+    opacity: 0.9;
+}
+
+.successReportText{
+    font-family: 'IBMPlexSans', 'sans-serif'; 
+    color: white; 
+    font-size: 20px; 
+    opacity: 0.8;
+}
+
+@media (max-width: 888px) {
+    .containerReportForm{
+        width: 450px;
+    }
+
+    .containerTextReport{
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerReportBugPage{
+        height: 770px;
+    }
+    .containerReportForm{
+        width: 400px;
+        height: 640px;
+    }
+
+    .containerTextReport{
+        margin-left: -2%;
+    }
+
+    .inputControl label{
+        font-size: 14.5px;
+    }
+
+    .inputControl input, .inputControl textarea{
+        font-size: 14.5px; 
+        height: 17px;
+    }
+
+    .inputControl textarea{
+        height: 59px;
+    }
+
+    .inputControl{
+        margin-top: 3.5px;
+    }
+
+    #form{
+        margin-top: -12px;
+    }
+
+    .checkboxInput input[type="checkbox"] + label{
+        font-size: 14.5px; 
+    }
+
+    .checkboxInput input[type="checkbox"] + label::before{
+        margin-top: 3.5px;
+    }
+
+    .reportBugHeader{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .containerReportBugPage{
+        height: 750px;
+    }
+
+    .inputControl label{
+        font-size: 13.5px;
+    }
+
+    .inputControl input, .inputControl textarea{
+        font-size: 13.5px; 
+        height: 16px;
+    }
+
+    .inputControl textarea{
+        height: 50px;
+    }
+
+    .inputControl{
+        margin-top: 3.5px;
+    }
+
+    #form{
+        margin-top: -12px;
+    }
+
+    .checkboxInput input[type="checkbox"] + label{
+        font-size: 13px; 
+    }
+
+    .checkboxInput input[type="checkbox"] + label::before{
+        margin-top: 2px;
+    }
+
+    .containerReportForm{
+        width: 300px;
+    }
+
+    .containerTextReport img{
+        width: 200px; 
+        height: auto;
+    }
+
+    .containerTextReport{
+        width: 350px; 
+        height: 50px; 
+        margin-left: -8%;
+    }
+
+    .reportBugHeader{
+        font-family: 'IBMPlexSans', 'sans-serif'; 
+        color: white; 
+        font-size: 18.9px; 
+        margin-left: 0px;
+        margin-top: -15px; 
+        letter-spacing: 1.2px;
+        text-align: center;
+    }
+
+    #form button{
+        height: 35px; 
+        font-size: 17px; 
+        margin-left: -6%; 
+        justify-content: center; 
+        align-items: center; 
+        padding: 0;
+    }
+
+    .containerReportForm{
+        height: 620px;
+    }
+
+    .inputControl label{
+        margin-left: -16px;
+    }
+
+    .inputControl input, .inputControl textarea{
+        margin-left: -25px; 
+        width: 92%;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerReportBugPage{
+        height: 730px;
+    }
+
+    .containerReportForm{
+        width: 290px; 
+        padding: 20px;
+    } 
+
+    .containerTextReport img{
+        width: 195px; 
+        height: auto;
+    }
+
+    .containerTextReport{
+        width: 230px; 
+        height: 55px; 
+        border-radius: 10px;
+        margin-left: 8%;
+    }
+
+    .reportBugHeader{
+        font-size: 16px; 
+        margin-left: 0px;
+        margin-top: -10px; 
+        letter-spacing: 1.1px; 
+        width: 100%;
+    }
+
+    .letUsKnow{
+        font-size: 17px; 
+        margin-top: -20px;
+    }
+
+    .inputControl{
+        gap: 5px;
+    }
+
+    .inputControl label{
+        font-size: 14px; 
+        margin-left: 0;
+    }
+
+    .inputControl input, .inputControl textarea{
+        font-size: 14px; 
+        height: 15px;
+    }
+
+    .inputControl textarea{
+        height: 55px;
+    }
+
+    .inputControl{
+        margin-top: 3.5px;
+    }
+
+    #form{
+        margin-top: -11px;
+    }
+
+    .checkboxInput input[type="checkbox"] + label{
+        font-size: 12px; 
+    }
+
+    .checkboxInput input[type="checkbox"] + label::before{
+        margin-top: 0.5px;
+    }
+
+    .inputControl .error{
+        font-size: 11px;
+    }
+
+    .inputControl input, .inputControl textarea{
+        margin-left: -12px; 
+        width: 85%;
+    }
+}
+
+@media (max-width: 390px) {
+    .containerReportForm{
+        width: 270px;
+    }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - PALORANT</title>
+    <link rel="stylesheet" href="/CSS-Files/index.css">
+    <link rel="stylesheet" href="/CSS-Files/navbar-footer.css">
+    <link rel="icon" href="/Images/PalorantLogoBlack.png" type="image/png">
+    <script src="/JS-Files/index.js"></script>
+    <script src="/JS-Files/navbar-footer.js"></script>
+    <style>
+        @font-face {
+            font-family: 'Valorant'; 
+            src: url(/Font/ValorantFont.ttf) format('truetype'); 
+        }
+        @font-face {
+            font-family: 'Gontserrat';
+            src: url(/Font/Gontserrat-Medium.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'IBMPlexSans'; 
+            src: url(/Font/IBMPlexSans-Medium.otf) format('truetype'); 
+        }
+    </style>
+</head>
+<body>
+    <div class="containerHome">
+        <img src="/Images/Breach2.png" alt="" class="Breach"> 
+        <div class="containerNavbar">
+            <nav class="icon">
+                <img src="/Images/PalorantGiot.png" alt="Giot Games" class="GiotGames" > 
+                <img src="/Images/PalorantLogo.png" alt="Palorant Logo" class="PalorantLogo"> 
+            </nav>
+            <nav class="navbar"> 
+                <button><a href="index.html">HOME</a></button>
+                <button><a href="/HTML-Files/agent.html">AGENT</a></button>
+                <button><a href="/HTML-Files/maps.html">MAPS</a></button>
+                <button><a href="/HTML-Files/news.html">NEWS</a></button>
+                <button><a href="/HTML-Files/reportBug.html">REPORT BUG</a></button>
+            </nav> 
+            <nav class="navbarHamburger" id="navbarHamburger">
+                <div class="closeLogo" id="closeLogo">✖</div> 
+                <div class="palorantHamburger">PALORANT</div> 
+                <div class="separatorHamburger">MAIN MENU</div>
+                <button onclick="window.location.href='index.html'">HOME   𖠿</button>           
+                <button onclick="window.location.href='/HTML-Files/agent.html'">AGENT   𖦏</button>
+                <button onclick="window.location.href='/HTML-Files/maps.html'">MAPS   ✈︎</button>
+                <button onclick="window.location.href='/HTML-Files/news.html'">NEWS   ✉︎</button>
+                <button onclick="window.location.href='/HTML-Files/reportBug.html'">REPORT BUG   ✔</button>
+            </nav>
+
+            <nav class="toggleLogo">
+                <div class="menu-toggle" id="menu-toggle">
+                    ☰
+                </div>
+            </nav>
+        </div>
+        <div class="containerMainPage">
+            <div class="logo">
+                <img src="/Images/PalorantLogoBlack.png" alt="Palorant Logo" class="LogoBlack1"> 
+                <img src="/Images/PalorantWhiteBlack.png" alt="" class="PalorantTitle">
+                <h2 class="BriefIntro">"AN IMMERSIVE FIRST-PERSON SHOOTER EXPERIENCE"</h2> 
+                <button class="buttonPlayNow" onclick="window.location.href='agent.html'">
+                    <div class="RecPlayNow">PLAY NOW</div>
+                </button>
+            </div>
+        </div> 
+    
+        <div class="android">
+            <div class="PalorantTitleAndroid">PALORANT</div> 
+            <div class="AndroidDesc">An Immersive First-Person Shooter Experience</div> 
+            <img src="/Images/PalorantWhite.png" alt="" class="PalorantLogoWhite1"> 
+            <div class="AndroidGiot">Presented by Giot Games™</div> 
+            <button>
+                <div class="androidPlayNow" onclick="window.location.href='agent.html'">PLAY NOW</div>
+            </button>
+        </div>
+    </div>
+
+    <div class="VideoBorder1"></div>
+
+    <div class="containerVideo">
+        <video src="/Videos/PalorantCinematicMP4.mp4" class="video" autoplay loop muted></video>
+        <div class="VideoElementContainer">
+            <div class="PalorantTitleVideo">PALORANT</div>
+            <h2 class="BriefDesc">COMPETE IN 5v5 MATCHES SHOOTING WITH UNIQUE AGENT POWERS
+            </h2>
+        </div>
+    </div> 
+
+    <div class="VideoBorder2"></div>
+
+    <div class="containerBestAgent">
+        <div class="BAelements">
+            <img src="/Images/PalorantBestAgentText.png" alt="" class="BestAgentText"> 
+            <div class="NamonText">> NAMON <</div> 
+            <div class="NamonDesc">The fierceful warrior, known as “The Fallen Angel”, has become the BEST AGENT in Palorant with a ground-breaking 63% of winrate.  </div>
+            <div class="containerStats">
+                <img src="/Images/PalorantRole.png" alt=""> 
+                <img src="/Images/PalorantWinrate.png" alt=""> 
+                <img src="/Images/PalorantUsers.png" alt=""> 
+                <img src="/Images/PalorantAbility.png" alt=""> 
+            </div>
+        </div>
+    </div> 
+
+    <div class="NamonAndroid1">NAMON</div>  
+    <div class="NamonAndroid2">NAMON</div> 
+
+    <button class="NamonStatsAndroid" id="toggleButtonAndroid">
+        <div class="containerStatsAndroid fade" id="containerStatsAndroid">
+            <img src="/Images/PalorantRole.png" alt=""> 
+            <img src="/Images/PalorantWinrate.png" alt=""> 
+            <img src="/Images/PalorantAbility.png" alt=""> 
+            <img src="/Images/PalorantUsers.png" alt=""> 
+        </div>
+        <div class="NamonDescAndroid fade" id="NamonDescAndroid">The fierceful warrior, known as “The Fallen Angel”, has become the BEST AGENT in Palorant with a ground-breaking 63% of winrate.  </div>
+    </button>
+    
+    <div class="containerNamon">
+        <img src="/Images/PalorantNamon.png" alt="" class="NamonImg"> 
+    </div>
+
+    <footer class="containerFooter">
+        <div class="website">OUR SOCIAL MEDIA:</div>
+        <div class="footerContent">
+            <button><img src="/Images/PalorantYouTube.png" alt="YouTube Icon" ></button>
+            <button><img src="/Images/PalorantInstagram.png" alt="Instagram Icon"></button> 
+            <button><img src="/Images/PalorantX.png" alt="X Icon"></button> 
+        </div>
+        <div class="adress">Registered Adress: GiotGames HQ, 3 Lower Thames Street, London ECR3 6HE, UK</div>
+        <img src="/Images/PalorantGiot.png" alt="" class="giotGamesFooter">
+        <div class="footerCopyright">©2025 Giot Games, Inc. GIOT GAMES, PALORANT and any associated logos are trademarks, service marks, and/or registered trademarks of Giot Games, Inc.</div>
+        <div class="footerLowerContent">
+            <button>PRIVACY POLICY</button>
+            <button>TERMS AND CONDITIONS</button>
+            <button>ABOUT GIOT GAMES</button>
+        </div>
+    </footer>
+</body>
+</html>

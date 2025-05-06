@@ -1,0 +1,457 @@
+body{
+    margin: 0; 
+    padding: 0; 
+}
+
+@font-face {
+    font-family: 'Valorant'; 
+    src: url(/Font/ValorantFont.ttf) format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Gontserrat';
+    src: url(/Font/Gontserrat-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'IBMPlexSans'; 
+    src: url(/Font/IBMPlexSans-Medium.otf) format('truetype'); 
+}
+
+.pageHeader{
+    width: 100%; 
+    height: 65px; 
+    background-color: black;
+}
+
+.containerUpperAgent{
+    width: calc(100% - 80px); 
+    height: 609px; 
+    background-color: #F7435A; 
+    display: flex; 
+    align-items: center; 
+    gap: 39px; 
+    padding: 0 40px 0 40px; 
+    justify-content: center;
+}
+
+.containerSpecificAgentInformation{
+    width: calc(60% - 40px); 
+    height: calc(90% - 40px); 
+    background-color: #212121; 
+    border-radius: 30px; 
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    z-index: 2;
+}
+
+.containerSpecificAgentImage{
+    width: calc(35% - 40px); 
+    height: calc(90% - 40px); 
+    background-color: #212121; 
+    border-radius: 30px; 
+    padding: 20px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;    
+    overflow: hidden; 
+    z-index: 1; 
+}
+
+.backgroundAgentImage{
+    width: 95%; 
+    height: 96%;
+    background-image: url(/Images/SpecificAgentBackground.png); 
+    background-size: cover; 
+    background-position-x: 43%; 
+    border-radius: 25px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.specificAgentImage{
+    height: 500px; 
+    width: 450px; 
+    background-image: url(/Images/PalorantGoard.png); 
+    background-size: cover; 
+    display: flex; 
+    z-index: 2; 
+    margin-left: 5px; 
+}
+
+.containerNameTitleRole{
+    height: 108px; 
+    width: 100%; 
+    /* background-color: blue;  */
+    gap: 10px; 
+    display: flex; 
+    justify-content: space-between;
+}
+
+.specificAgentName{
+    font-family: 'Valorant', 'sans-serif'; 
+    font-size: 70px; 
+    color: #E2E2E2; 
+    letter-spacing: 15px;
+}
+
+.specificAgentTitle{
+    font-family: 'IBMPlexSans', 'sans-serif'; 
+    font-size: 25px;
+    color: #F1F1F1; 
+    margin-top: -5px;
+}
+
+.containerSpecificAgentRole{
+    width: 130px; 
+    height: 100px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    gap: 10px; 
+    /* background-color: red;    */
+    margin-top: 10px;
+}
+
+.specificAgentRoleImage{
+    width: 55px; 
+    height: 55px; 
+}
+
+.specificAgentRoleText{
+    font-family: 'Valorant', 'sans-serif'; 
+    font-size: 19px; 
+    color: white;
+}
+
+.whiteBorder{
+    width: 100%; 
+    height: 10px; 
+    border-radius: 5px;     
+    background-color: white; 
+    opacity: 0.1; 
+    margin-top: 10px;
+}
+
+.specificAgentDescription{
+    font-family: 'IBMPlexSans', 'sans-serif'; 
+    width: 550px; 
+    font-size: 18px; 
+    color: white; 
+    margin-top: 25px; 
+    opacity: 0.8;
+}
+
+.specialAbilities{
+    font-family: 'IBMPlexSans', 'sans-serif'; 
+    font-size: 25px; 
+    color: #F1F1F1; 
+    margin-top: 15px; 
+}
+
+.containerAbility{
+    width: 100%; 
+    height: 235px; 
+    background-color: black; 
+    margin-top: 20px; 
+    border-radius: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 8px; 
+    align-items: center;
+}
+
+.abilityList{
+    width: 420px; 
+    height: 75px; 
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center; 
+}
+
+.abilityImage{
+    height: 65px; 
+    width: 65px; 
+    opacity: 0.5; 
+    cursor: pointer; 
+    transition: 0.1s ease-in-out;
+}
+
+.abilityImage:hover{
+    transform: scale(1.1);
+}
+
+.active{
+    opacity: 1;
+}
+
+.abilityDescription{
+    font-family: 'IBMPlexSans', 'sans-serif'; 
+    font-size: 17px; 
+    color: #F1F1F1; 
+    width: 550px; 
+    text-align: center; 
+    opacity: 0.8; 
+    margin-top: -5px;
+}
+
+.abilityName{
+    font-family: 'Valorant', 'sans-serif'; 
+    font-size: 34px; 
+    color: #F1F1F1;  
+}
+
+.agentHeader{
+    width: 100%; 
+    height: 202px; 
+    background: linear-gradient(hsla(0, 70%, 1%, 0.502), rgba(50, 49, 49, 0.5)), url(/Images/SpecificAgentBackground.png); 
+    background-size: cover; 
+    background-position-y: 65%; 
+    display: none; 
+    flex-direction: column-reverse; 
+    align-items: center; 
+}
+
+.agentHeaderImage{
+    width: 50%; 
+    height: 95%; 
+    background-image: url(/Images/PalorantGoard.png); 
+    background-size: cover; 
+    background-position-y: 0;
+}
+
+.headerUpperGradient{
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0) 45%, rgb(0, 0, 0, 1)); 
+    width: 100%; 
+    height: 150px; 
+    position: absolute; 
+    opacity: 0.65; 
+    z-index: 1; 
+    display: none; 
+}
+
+.headerLowerGradient{
+    background: linear-gradient(to top, rgb(0, 0, 0, 0) 45%, rgb(0, 0, 0, 1)); 
+    width: 100%; 
+    height: 150px; 
+    position: absolute; 
+    opacity: 0.65; 
+    z-index: 1; 
+}
+
+.arrowLeft{
+    height: 360px; 
+    width: auto; 
+    position: absolute; 
+    opacity: 0.6;  
+    margin-left: -50px;
+}
+
+.arrowRight{
+    height: 360px; 
+    width: auto; 
+    position: absolute; 
+    opacity: 0.6; 
+    right: 0;
+}
+
+.arr1, .arr2{
+    margin-top: 135px;
+}
+
+.namonImage{
+    background-image: url(/Images/PalorantNamon2.png); 
+}
+
+.namonText{
+    letter-spacing: 6px;
+}
+
+.novakImage{
+    background-image: url(/Images/PalorantNovak.png); 
+}
+
+.novakText{
+    letter-spacing: 10px;
+}
+
+.clintImage{
+    background-image: url(/Images/PalorantClint.png); 
+}
+
+.jeantImage{
+    background-image: url(/Images/PalorantJeant.png); 
+}
+
+.jeantText{
+    letter-spacing: 10px;
+}
+
+.aleenImage{
+    background-image: url(/Images/PalorantAleen.png); 
+}
+
+@media (max-width: 1024px) {
+    .specificAgentImage{
+        margin-left: -12%;
+    }
+
+    .specificAgentDescription{
+        width: 100%;
+    }
+
+    .specificAgentDescription{
+        font-size: 14px;
+    }
+
+    .abilityDescription{
+        width: calc(100% - 30px); 
+        font-size: 14px;
+    }
+
+    .containerAbility{
+        height: 250px;
+    }
+
+    .abilityList{
+        width: 290px;
+    }
+}
+
+@media (max-width: 888px) {
+    .specificAgentName{
+        font-size: 60px;
+    }
+
+    .specificAgentTitle{
+        font-size: 20px ;
+    }
+
+    .containerSpecificAgentRole{
+        height: 60px; 
+        margin-top: 15px; 
+        width: 90px;
+    }
+
+    .specificAgentRoleImage{
+        width: 40px; 
+        height: 40px;
+    }
+
+    .specificAgentRoleText{
+        font-size: 15px;
+    }
+
+    .agentHeader{
+        height: 185px;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerSpecificAgentImage{
+        display: none;
+    }
+
+    .containerSpecificAgentInformation{
+        width: 90%; 
+    }
+
+    .specificAgentName{
+        font-size: 55px;
+    }
+
+    .agentHeader{
+        display: flex; 
+    }
+
+    .specificAgentDescription{
+        width: 459px;
+    }
+
+    .whiteBorder{
+        margin-top: -15px;
+    }
+
+    .containerAbility{
+        margin-top: 30px;
+    }
+
+    .headerUpperGradient{
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .agentHeader{
+        height: 175px;
+    }
+
+    .specificAgentDescription{
+        width: 100%; 
+        margin-top: 12px;
+    }
+
+    .whiteBorder{
+        margin-top: -15px;
+    }
+
+    .containerAbility{
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerUpperAgent{
+        height: 809px;
+    }
+
+    .containerNameTitleRole{
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        margin-top: 20px; 
+        height: fit-content; 
+        gap: 10px;
+    }
+
+    .containerNameTitle{
+        width: 100%;
+    }
+
+    .specificAgentTitle{
+        text-align: center; 
+        width: 100%; 
+    }
+
+    .specificAgentName{
+        width: 100%; 
+        text-align: center; 
+        margin-left: 4px;
+    }
+
+    .containerSpecificAgentRole{
+        height: 60px;
+    }
+
+    .whiteBorder{
+        margin-top: 28px;
+    }
+
+    .containerAbility{
+        height: 275px; 
+        margin-top: 55px;
+    }
+
+    .specificAgentDescription{
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 390px) {
+    .containerAbility{
+        margin-top: 30px;
+    }
+}

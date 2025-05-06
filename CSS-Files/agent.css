@@ -1,0 +1,507 @@
+body{
+    margin: 0; 
+    padding: 0; 
+}
+
+@font-face {
+    font-family: 'Valorant'; 
+    src: url(/Font/ValorantFont.ttf) format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Gontserrat';
+    src: url(/Font/Gontserrat-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'IBMPlexSans'; 
+    src: url(/Font/IBMPlexSans-Medium.otf) format('truetype'); 
+}
+
+.pageHeader{
+    width: 100%; 
+    height: 65px; 
+    background-color: black;
+}
+
+.agentHeader{
+    width: 100%; 
+    height: 202px; 
+    background: linear-gradient(hsla(0, 70%, 1%, 0.502), rgba(50, 49, 49, 0.5)), url(/Images/PalorantAgentHeader.png); 
+    background-size: cover; 
+    background-position-y: 20%; 
+    display: flex; 
+    flex-direction: column-reverse; 
+    align-items: center;
+}
+
+.meetAgents{
+    width: 55%; 
+    height: auto; 
+    z-index: 2;
+}
+
+.prepareRound{
+    font-size: 27px; 
+    font-family: 'IBMPlexSans', 'sans-serif'; 
+    color: white; 
+    opacity: 0.92; 
+    position: absolute; 
+    margin-top: -50px; 
+    word-spacing: 10%; 
+    font-weight: 700; 
+    letter-spacing: 2px; 
+    text-align: center; 
+}
+
+.headerLowerGradient{
+    background: linear-gradient(to top, rgb(0, 0, 0, 0) 45%, rgb(0, 0, 0, 1)); 
+    width: 100%; 
+    height: 150px; 
+    position: absolute; 
+    opacity: 0.65;
+}
+
+.headerUpperGradient{
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0) 45%, rgb(0, 0, 0, 1)); 
+    width: 100%; 
+    height: 150px; 
+    position: absolute; 
+    opacity: 0.65; 
+    z-index: 1;
+}
+
+.containerAgents{
+    width: (100% - 60px);  
+    height: fit-content; 
+    background-color: #F7435A; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    padding: 60px 60px 30px 60px; 
+    gap: 30px; 
+    overflow: hidden;
+}
+
+.containerIndividualAgent{
+    width: 356px; 
+    height: 450px; 
+    background-color: #212121; 
+    border-radius: 30px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    overflow: hidden; 
+    cursor: pointer; 
+    transition: 0.1s ease-in-out;
+}
+
+.containerIndividualAgent:hover .agentImage{
+    transform: scale(1.05); 
+    margin-top: -8px;
+}
+
+.containerIndividualAgent:hover .containerAgentText .agentText{
+    font-size: 54px;
+}
+
+.agentText{
+    font-size: 50px; 
+    font-family: 'Valorant', 'sans-serif'; 
+    color: white; 
+    margin-top: 20px; 
+}
+
+.agentImage{
+    width: 350px; 
+    height: 342px; 
+    background-image: url(/Images/PalorantGoard.png); 
+    background-size: cover; 
+    margin-top: 0px; 
+    background-position-y: 0%; 
+    position: absolute; 
+    z-index: 2;
+}
+
+.containerAgentText{
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    gap: 25px;
+}
+
+.agentTextSideLeft{
+    font-family: 'Valorant', 'sans-serif'; 
+    font-size: 45px; 
+    color: #3C3C3C; 
+    margin-top: 23px; 
+}
+
+.agentTextSideRight{
+    font-family: 'Valorant', 'sans-serif'; 
+    font-size: 45px; 
+    color: #3C3C3C; 
+    margin-top: 23px;
+} 
+
+.agentBackground{
+    width: 90%; 
+    height: 76%; 
+    margin-top: 25px; 
+    background-image: url(/Images/PalorantAgentBackground.png); 
+    background-size: cover; 
+    background-position-x: 65%; 
+    border-radius: 20px 20px 0 0; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+} 
+
+.containerAgentElements{
+    width: 100%; 
+    height: 80px; 
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 262px; 
+}
+
+.agentPalorantLogo{
+    height: 60px; 
+    width: auto; 
+    margin-left: -25px; 
+    opacity: 0.7; 
+    margin-top: 13px; 
+    z-index: 1;
+}
+
+.containerAgentRole{
+    width: 80px; 
+    height: 60px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 7px; 
+    margin-top: 16px; 
+    z-index: 3;
+}
+
+.agentRoleImage{
+    width: 35px; 
+    height: 35px; 
+    opacity: 0.7;
+}
+
+.agentRoleText{
+    font-family: 'Valorant', 'sans-serif'; 
+    font-size: 13px; 
+    color: white; 
+    opacity: 0.7;
+}
+
+.namonAgent{
+    background-image: url(/Images/PalorantNamon2.png); 
+    margin-left: 20px; 
+    background-position-y: 0%;
+}
+
+.novakAgent{
+    background-image: url(/Images/PalorantNovak.png); 
+    background-position-x: 90%; 
+    margin-left: -20px;
+}
+
+.clintAgent{
+    background-image: url(/Images/PalorantClint.png); 
+    margin-left: -15px;
+}
+
+.jeantAgent{
+    background-image: url(/Images/PalorantJeant.png); 
+}
+
+.aleenAgent{
+    background-image: url(/Images/PalorantAleen.png); 
+    margin-left: -50px;
+}
+
+.arrowLeft{
+    height: 360px; 
+    width: auto; 
+    position: absolute; 
+    opacity: 0.6;  
+    margin-left: -50px;
+}
+
+.arrowRight{
+    height: 360px; 
+    width: auto; 
+    position: absolute; 
+    opacity: 0.6; 
+    right: 0;
+}
+
+.arr1, .arr2{
+    margin-top: 38px;
+}
+
+.arr3, .arr4{
+    margin-top: 608px; 
+}
+
+.arr5, .arr6{
+    display: none; 
+    margin-top: 1178px; 
+}
+
+.arr7, .arr8{
+    display: none; 
+    margin-top: 1748px;
+}
+
+@media (max-width: 1024px) {
+    .containerIndividualAgent{
+        width: 47%; 
+    }
+
+    .containerAgents{
+        gap: 40px; 
+        padding: 60px 40px 30px 40px; 
+    }
+
+    .agentImage{
+        width: 389px; 
+        height: 342px;
+    }
+
+    .namonAgent{
+        margin-left: 10px;
+    }
+
+    .clintAgent{
+        margin-left: -10px;
+    }
+
+    .aleenAgent{
+        margin-left: -30px;
+    }
+
+    .specificAgentImage{
+        margin-left: -12%;
+    }
+
+    .specificAgentDescription{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 888px) {
+    .agentHeader{
+        height: 185px;
+    }
+
+    .prepareRound{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerIndividualAgent{
+        height: 400px;
+    }
+
+    .meetAgents{
+        width: 78%; 
+    }
+
+    .containerAgents{
+        gap: 20px;
+    }
+
+    .prepareRound{
+        font-size: 22px; 
+    }
+
+    .containerAgentText{
+        gap: 15px;
+    }
+
+    .agentText{
+        font-size: 40px; 
+        margin-top: 15px;
+    }
+
+    .agentTextSideLeft, .agentTextSideRight{
+        font-size: 37px; 
+        margin-top: 17px;
+    }
+
+    .containerIndividualAgent:hover .containerAgentText .agentText{
+        font-size: 45px;
+    }
+
+    .agentImage{
+        width: 313px; 
+        height: 305px;
+    }
+
+    .containerAgentElements{
+        margin-top: 225px; 
+    }
+
+    .arr5, .arr6{
+        display: none; 
+    }
+}
+
+@media (max-width: 600px) {
+    .agentHeader{
+        height: 175px;
+    }
+
+    .containerIndividualAgent{
+        height: 370px; 
+    }
+
+    .containerAgents{
+        padding: 50px 40px 30px 40px; 
+    }
+
+    .prepareRound{
+        font-size: 18px; 
+        margin-top: -40px;
+    }
+
+    .agentText{
+        font-size: 32px; 
+        margin-top: 15px;
+    }
+
+    .agentTextSideLeft, .agentTextSideRight{
+        font-size: 27px; 
+        margin-top: 20px;
+    }
+
+    .containerIndividualAgent:hover .containerAgentText .agentText{
+        font-size: 36px;
+    }
+
+    .agentImage{
+        width: 240px; 
+        height: 250px; 
+        margin-top: 30px;
+    }
+
+    .containerIndividualAgent:hover .agentImage{
+        margin-top: 25px;
+    }
+
+    .containerAgentElements{
+        margin-top: 200px; 
+    }
+
+    .agentPalorantLogo{
+        height: 45px; 
+        width: auto; 
+        margin-left: -18px; 
+        margin-top: 30px;
+    }
+
+    .agentRoleImage{
+        width: 25px; 
+        height: 25px; 
+        margin-top: 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .meetAgents{
+        width: 85%; 
+        margin-top: -10px;
+    }
+
+    .containerIndividualAgent{
+        width: 90%; 
+        height: 350px;
+    }
+
+    .prepareRound{
+        width: 80%;
+    }
+
+    .containerAgents{
+        padding: 70px 30px 30px 30px; 
+    }
+
+    .prepareRound{
+        width: 370px; 
+        margin-top: -60px;
+    }
+
+    .agentBackground{
+        height: 72%;
+    }
+
+    .containerAgentText{
+        gap: 25px; 
+        margin-top: 3px;
+    }
+
+    .agentText{
+        font-size: 40px; 
+        margin-top: 15px;
+    }
+
+    .agentTextSideLeft, .agentTextSideRight{
+        font-size: 35px; 
+        margin-top: 17px;
+    }
+
+    .containerIndividualAgent:hover .containerAgentText .agentText{
+        font-size: 45px;
+    }
+
+    .containerIndividualAgent:hover .agentBackground .agentImage{
+        margin-top: -5px;
+    }
+
+    .containerAgentElements{
+        margin-top: 172px;
+    }
+
+    .agentImage{
+        width: 260px; 
+        height: 252px;
+        margin-top: 0;
+    }
+
+    .agentPalorantLogo{
+        height: 60px; 
+        width: auto; 
+        margin-left: -25px; 
+        margin-top: 13px;
+    }
+
+    .agentRoleImage{
+        width: 35px; 
+        height: 35px; 
+        margin-top: 0;
+    }
+
+    .namonAgent{
+        margin-left: 5px;
+    }
+
+    .jeantAgent{
+        margin-left: 10px;
+    }
+
+    .aleenAgent{
+        margin-left: -40px;
+    }
+
+    .arr5, .arr6, .arr7, .arr8{
+        display: block;
+    }
+}
