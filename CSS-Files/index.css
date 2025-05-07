@@ -5,17 +5,17 @@ body{
 
 @font-face {
     font-family: 'Valorant'; 
-    src: url(/Font/ValorantFont.ttf) format('truetype'); 
+    src: url(../Font/ValorantFont.ttf) format('truetype'); 
 }
 
 @font-face {
     font-family: 'Gontserrat';
-    src: url(/Font/Gontserrat-Medium.ttf) format('truetype');
+    src: url(../Font/Gontserrat-Medium.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'IBMPlexSans'; 
-    src: url(/Font/IBMPlexSans-Medium.otf) format('truetype'); 
+    src: url(../Font/IBMPlexSans-Medium.otf) format('truetype'); 
 }
 
 .Breach{
@@ -36,7 +36,7 @@ body{
 .containerMainPage{
     width: 100%; 
     height: 674px; 
-    background-image: url(/Images/HomeBackground1.jpg); 
+    background-image: url(../Images/HomeBackground1.jpg); 
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: top; 
@@ -210,7 +210,7 @@ body{
     width: 100%; 
     height: 450px; 
     background-color: red; 
-    background-image: url(/Images/PalorantBestAgentBG.jpg); 
+    background-image: url(../Images/PalorantBestAgentBG.jpg); 
     display: flex; 
     flex-direction: column; 
     overflow: hidden;
@@ -566,7 +566,7 @@ body{
         transform: translateX(-78%);
     }
     .containerMainPage{
-        background-image: url(/Images/HomeBackground8.jpg); 
+        background-image: url(../Images/HomeBackground8.jpg); 
         background-position: top;
     }
     .PalorantTitleVideo{
@@ -714,7 +714,7 @@ body{
         display: none; 
     }
     .containerMainPage{
-        background-image: url(/Images/HomeBackground7.jpg); 
+        background-image: url(../Images/HomeBackground7.jpg); 
         background-position: top; 
         width: 100%; 
         height: 707.7px; 
@@ -876,7 +876,6 @@ body{
         z-index: 16; 
         justify-content: center; 
         align-items: center;
-        /* display: none; */
     }
     .containerStatsAndroid{
         width: 80%; 

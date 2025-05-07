@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 
 window.onload = function() {
-    const metroStockImages = ["/Images/PalorantMetro3.jpg", "/Images/PalorantMetro4.jpg"]; 
+    const metroStockImages = ["../Images/PalorantMetro3.jpg", "../Images/PalorantMetro4.jpg"]; 
     let metroIdxDesktop = 0; 
     let metroIdxAndroid = 0; 
 
@@ -48,7 +48,7 @@ window.onload = function() {
         document.getElementById("metroDesktopImage").src = metroStockImages[metroIdxAndroid]; 
     }
 
-    const suburbStockImages = ["/Images/PalorantSuburb2.webp", "/Images/PalorantSuburb5.jpg"]; 
+    const suburbStockImages = ["../Images/PalorantSuburb2.webp", "../Images/PalorantSuburb5.jpg"]; 
     let suburbIdxDesktop = 0; 
     let suburbIdxAndroid = 0; 
 
@@ -65,7 +65,7 @@ window.onload = function() {
         document.getElementById("suburbDesktopImage").src = suburbStockImages[suburbIdxAndroid]; 
     }
 
-    const templeStockImages = ["/Images/PalorantTemple1.jpg", "/Images/PalorantTemple2.webp"]; 
+    const templeStockImages = ["../Images/PalorantTemple1.jpg", "../Images/PalorantTemple2.webp"]; 
     let templeIdxDesktop = 0; 
     let templeIdxAndroid = 0; 
 
@@ -82,7 +82,7 @@ window.onload = function() {
         document.getElementById("templeDesktopImage").src = templeStockImages[templeIdxAndroid]; 
     }
 
-    const dockStockImages = ["/Images/PalorantDock2.jpg", "/Images/PalorantDock3.jpg"]; 
+    const dockStockImages = ["../Images/PalorantDock2.jpg", "../Images/PalorantDock3.jpg"]; 
     let dockIdxDesktop = 0; 
     let dockIdxAndroid = 0; 
 
@@ -99,7 +99,7 @@ window.onload = function() {
         document.getElementById("dockDesktopImage").src = dockStockImages[dockIdxAndroid]; 
     }
 
-    const ruinsStockImages = ["/Images/PalorantRuins2.webp", "/Images/PalorantRuins3.jpg"]; 
+    const ruinsStockImages = ["../Images/PalorantRuins2.webp", "../Images/PalorantRuins3.jpg"]; 
     let ruinsIdxDesktop = 0; 
     let ruinsIdxAndroid = 0; 
 

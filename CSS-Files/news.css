@@ -5,17 +5,17 @@ body{
 
 @font-face {
     font-family: 'Valorant'; 
-    src: url(/Font/ValorantFont.ttf) format('truetype'); 
+    src: url(../Font/ValorantFont.ttf) format('truetype'); 
 }
 
 @font-face {
     font-family: 'Gontserrat';
-    src: url(/Font/Gontserrat-Medium.ttf) format('truetype');
+    src: url(../Font/Gontserrat-Medium.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'IBMPlexSans'; 
-    src: url(/Font/IBMPlexSans-Medium.otf) format('truetype'); 
+    src: url(../Font/IBMPlexSans-Medium.otf) format('truetype'); 
 }
 
 .pageHeader{
@@ -27,7 +27,7 @@ body{
 .newsHeader{
     width: 100%; 
     height: 202px; 
-    background: linear-gradient(hsla(0, 70%, 1%, 0.502), rgba(50, 49, 49, 0.5)), url(/Images/PalorantNewsBackground3.jpg);
+    background: linear-gradient(hsla(0, 70%, 1%, 0.502), rgba(50, 49, 49, 0.5)), url(../Images/PalorantNewsBackground3.jpg);
     background-size: cover; 
     background-position-y: 10%; 
 }
@@ -342,7 +342,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/Images/PalorantDecorationArrow2.png);
+    background-image: url(../Images/PalorantDecorationArrow2.png);
     background-size: cover;
     opacity: 0.55; 
     z-index: 10; 

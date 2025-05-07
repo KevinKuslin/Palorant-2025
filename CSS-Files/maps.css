@@ -5,17 +5,17 @@ body{
 
 @font-face {
     font-family: 'Valorant'; 
-    src: url(/Font/ValorantFont.ttf) format('truetype'); 
+    src: url(../Font/ValorantFont.ttf) format('truetype'); 
 }
 
 @font-face {
     font-family: 'Gontserrat';
-    src: url(/Font/Gontserrat-Medium.ttf) format('truetype');
+    src: url(../Font/Gontserrat-Medium.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'IBMPlexSans'; 
-    src: url(/Font/IBMPlexSans-Medium.otf) format('truetype'); 
+    src: url(../Font/IBMPlexSans-Medium.otf) format('truetype'); 
 }
 
 .pageHeader{
@@ -27,7 +27,7 @@ body{
 .mapsHeader{
     width: 100%; 
     height: 202px; 
-    background: linear-gradient(hsla(0, 70%, 1%, 0.502), rgba(50, 49, 49, 0.5)), url(/Images/PalorantMapBackground2.webp); 
+    background: linear-gradient(hsla(0, 70%, 1%, 0.502), rgba(50, 49, 49, 0.5)), url(../Images/PalorantMapBackground2.webp); 
     background-size: cover; 
     background-position-y: 65%; 
     display: flex; 
@@ -92,7 +92,7 @@ body{
 .mapImage{
     width: 100%; 
     height: 100%; 
-    background-image: url(/Images/PalorantRuins.png); 
+    background-image: url(../Images/PalorantRuins.png); 
     background-size: cover;
     background-position: center;   
     background-position-y: 100%; 
@@ -123,21 +123,21 @@ body{
 }
 
 .map2{
-    background-image: url(/Images/PalorantDock\ \(1\).jpg); 
+    background-image: url(../Images/PalorantDock\ \(1\).jpg); 
     background-position-x: 40%;
 }
 
 .map3{
-    background-image: url(/Images/PalorantMapTemple.webp); 
+    background-image: url(../Images/PalorantMapTemple.webp); 
     background-position-x: 50%;
 }
 
 .map4{
-    background-image: url(/Images/PalorantSuburb.jpg); 
+    background-image: url(../Images/PalorantSuburb.jpg); 
 }
 
 .map5{
-    background-image: url(/Images/PalorantMetro2.jpg); 
+    background-image: url(../Images/PalorantMetro2.jpg); 
 }
 
 .containerIndividualMaps:hover{
@@ -365,7 +365,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/Images/PalorantDecorationArrow2.png);
+    background-image: url(../Images/PalorantDecorationArrow2.png);
     background-size: cover;
     opacity: 0.55; 
     z-index: 10; 
@@ -617,7 +617,7 @@ body{
     .androidMapImage{
         width: 97%; 
         height: 81%; 
-        background-image: url(/Images/PalorantRuins.png); 
+        background-image: url(../Images/PalorantRuins.png); 
         background-size: cover; 
         margin-top: 5px; 
         border-radius: 10px 10px 0 0; 
@@ -640,21 +640,21 @@ body{
     }
 
     .altMap2{
-        background-image: url(/Images/PalorantDock\ \(1\).jpg); 
+        background-image: url(../Images/PalorantDock\ \(1\).jpg); 
         background-position-x: 40%;
     }
 
     .altMap3{
-        background-image: url(/Images/PalorantMapTemple.webp); 
+        background-image: url(../Images/PalorantMapTemple.webp); 
         background-position-x: 50%;
     }
 
     .altMap4{
-        background-image: url(/Images/PalorantSuburb.jpg); 
+        background-image: url(../Images/PalorantSuburb.jpg); 
     }
 
     .altMap5{
-        background-image: url(/Images/PalorantMetro2.jpg);
+        background-image: url(../Images/PalorantMetro2.jpg);
     }
 }
 

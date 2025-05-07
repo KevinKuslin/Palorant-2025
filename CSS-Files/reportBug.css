@@ -5,17 +5,17 @@ body{
 
 @font-face {
     font-family: 'Valorant'; 
-    src: url(/Font/ValorantFont.ttf) format('truetype'); 
+    src: url(../Font/ValorantFont.ttf) format('truetype'); 
 }
 
 @font-face {
     font-family: 'Gontserrat';
-    src: url(/Font/Gontserrat-Medium.ttf) format('truetype');
+    src: url(../Font/Gontserrat-Medium.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'IBMPlexSans'; 
-    src: url(/Font/IBMPlexSans-Medium.otf) format('truetype'); 
+    src: url(../Font/IBMPlexSans-Medium.otf) format('truetype'); 
 }
 
 .pageHeader{
@@ -33,7 +33,7 @@ body{
     display: flex; 
     flex-direction: column; 
     overflow: hidden; 
-    background-image: url(/Images/PalorantReportBug.jpg);  
+    background-image: url(../Images/PalorantReportBug.jpg);  
     background-position: top; 
     align-items: center; 
 }
